@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    background-color: hsl(225, 100%, 98%);
+    margin: 15vh auto;
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+
+.four-hundred-pixels {
+    width: 400px;
+}
+
+.header-img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.title {
+    margin-top: 30px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.p {
+    font-size: 0.8rem;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: hsl(224, 23%, 55%);
+    padding:0 18%;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.plan {
+    display: flex;
+    margin: 0 18%;
+    color: white;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.title-plan {
+    font-size: 0.9rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.music-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.pricing {
+    margin-left: 20px;
+    color: hsl(224, 23%, 55%);    
+    text-align: left;
+}
+
+.change {
+   text-decoration: none;
+   position: absolute;
+   right: 0;
+   font-weight: 700;
+}
+
+.change a {
+    color: hsl(245, 75%, 52%);
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-proceed {
+    margin:  0 15%;
+    background: hsl(245, 75%, 52%);
+    border-radius: 7px;
+    padding: 10px;
+    color: hsl(225, 100%, 98%);
+}
+
+.btn-cancel {
+    width: fit-content;
+    margin: 25px auto;
+    color: hsl(224, 23%, 55%);
+}
+
+@media (max-width: 1025px) {
+    body {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-size: contain;
+    }
+}
+
+@media (max-width: 445px) {
+   .card {
+       width: 90%;
+       margin: 5vh auto;
+   }
+
+   .header-img {
+       width: 100%;
+   }
+}
+
+@media (max-width: 355px) {
+    .plan {
+        flex-direction: column;
+    }
+
+    .pricing {
+        margin: 25px 0 0 0;
+        text-align: center;
+    }
+
+    .change {
+        margin-top: 25px;
+        position: relative;
+    }
+}
